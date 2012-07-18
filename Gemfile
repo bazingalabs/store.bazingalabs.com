@@ -35,6 +35,7 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 gem 'capistrano'
+gem 'i18n'
 
 # To use debugger
 # gem 'debugger'

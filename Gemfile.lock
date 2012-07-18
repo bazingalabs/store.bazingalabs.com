@@ -256,6 +256,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   coffee-rails (~> 3.2.1)
+  i18n
   jquery-rails
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
