@@ -1,4 +1,4 @@
-root = "/home/deployer/store.bazingalabs.com/blog/current"
+root = "/home/deployer/apps/store.bazingalabs.com//current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
