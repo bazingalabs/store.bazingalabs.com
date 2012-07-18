@@ -31,7 +31,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
@@ -42,9 +42,9 @@ gem 'i18n'
 #gem 'pry'
 gem 'spree'
 gem 'spree_auth'
+gem "spree_social", :git => "git://github.com/spree/spree_social.git"
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
 gem "spree_address_book", :github => "erikkallen/spree_address_book"
-gem "spree_social", :git => "git://github.com/spree/spree_social.git"
 #gem "spree_address_book", :path => "vendor/spree_address_book"

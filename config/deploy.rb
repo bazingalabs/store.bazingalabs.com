@@ -1,3 +1,4 @@
+require 'bundler/capistrano'
 server "store.bazingalabs.com", :web, :app, :db, primary: true
 
 set :application, "store.bazingalabs.com"
