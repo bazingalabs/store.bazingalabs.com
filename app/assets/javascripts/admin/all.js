@@ -10,4 +10,4 @@
 // require admin/spree_promo
 
 //= require_tree .
-//= require admin/spree_social
+// require admin/spree_social
