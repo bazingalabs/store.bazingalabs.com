@@ -52,5 +52,5 @@ gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
-gem "spree_address_book", :github => "romul/spree_address_book"
+gem "spree_address_book", :github => "erikkallen/spree_address_book"
 #gem "spree_address_book", :path => "vendor/spree_address_book"

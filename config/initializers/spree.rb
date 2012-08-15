@@ -10,3 +10,4 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
 end
+Spree::Config.set(logo: "bazinga.png")
