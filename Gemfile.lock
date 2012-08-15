@@ -6,6 +6,27 @@ GIT
       spree_auth (~> 1.0)
       spree_core (~> 1.0)
 
+GIT
+  remote: git://github.com/spree/spree_paypal_express.git
+  revision: b06a083c55c8e52a0dd3d9bbce384559a65c3af3
+  specs:
+    spree_paypal_express (1.1.0)
+      spree_auth (>= 1.0.0)
+      spree_core (>= 1.0.0)
+
+GIT
+  remote: git://github.com/spree/spree_social.git
+  revision: 0bce4d6fc377307ac455add98901a07065140f97
+  specs:
+    spree_social (2.1.0)
+      oa-core
+      omniauth
+      omniauth-facebook
+      omniauth-github
+      omniauth-twitter
+      spree_auth (~> 1.1.0)
+      spree_core (~> 1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -84,20 +105,26 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.1)
+      multipart-post (~> 1.1)
     ffaker (1.12.1)
     foreman (0.53.0)
       thor (>= 0.13.6)
+    hashie (1.2.0)
     highline (1.6.11)
     hike (1.2.1)
     httparty (0.8.3)
       multi_json (~> 1.0)
       multi_xml
+    httpauth (0.1)
     i18n (0.6.0)
     journey (1.0.4)
     jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.7.3)
+    jwt (0.1.5)
+      multi_json (>= 1.0)
     kaminari (0.13.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -112,6 +139,7 @@ GEM
       i18n (~> 0.4)
     multi_json (1.3.6)
     multi_xml (0.5.1)
+    multipart-post (1.1.5)
     mysql2 (0.3.11)
     nested_set (1.7.0)
       activerecord (>= 3.0.0)
@@ -124,6 +152,31 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
+    oa-core (0.3.2)
+    oauth (0.4.6)
+    oauth2 (0.8.0)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    omniauth (1.1.0)
+      hashie (~> 1.2)
+      rack
+    omniauth-facebook (1.4.1)
+      omniauth-oauth2 (~> 1.1.0)
+    omniauth-github (1.0.2)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-oauth2 (1.1.0)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
+    omniauth-twitter (0.0.12)
+      multi_json (~> 1.3)
+      omniauth-oauth (~> 1.0)
     orm_adapter (0.0.7)
     paperclip (2.7.0)
       activerecord (>= 2.3.0)
@@ -229,6 +282,8 @@ DEPENDENCIES
   spree
   spree_address_book!
   spree_auth
+  spree_paypal_express!
+  spree_social!
   sqlite3
   uglifier (>= 1.0.3)
   unicorn

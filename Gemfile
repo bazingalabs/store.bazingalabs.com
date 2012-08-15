@@ -47,7 +47,8 @@ gem 'i18n'
 #gem 'pry'
 gem 'spree'
 gem 'spree_auth'
-#gem "spree_social", :git => "git://github.com/spree/spree_social.git"
+gem "spree_social" , :git => "git://github.com/spree/spree_social.git"
+gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
