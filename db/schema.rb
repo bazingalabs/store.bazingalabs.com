@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120815205143) do
+ActiveRecord::Schema.define(:version => 20120822195548) do
 
   create_table "coupons", :force => true do |t|
     t.string   "code"
@@ -138,6 +138,13 @@ ActiveRecord::Schema.define(:version => 20120815205143) do
 
   add_index "spree_configurations", ["name", "type"], :name => "index_configurations_on_name_and_type"
 
+  create_table "spree_contact_topics", :force => true do |t|
+    t.string   "name"
+    t.string   "emails"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "spree_countries", :force => true do |t|
     t.string  "iso_name"
     t.string  "iso"
@@ -215,6 +222,16 @@ ActiveRecord::Schema.define(:version => 20120815205143) do
     t.boolean  "active",      :default => true
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "spree_messages", :force => true do |t|
+    t.integer  "topic_id"
+    t.string   "name",         :null => false
+    t.string   "email",        :null => false
+    t.string   "order_number"
+    t.text     "message",      :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "spree_option_types", :force => true do |t|

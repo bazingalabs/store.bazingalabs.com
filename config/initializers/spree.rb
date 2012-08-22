@@ -9,5 +9,6 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
+  config.default_country_id = Spree::Country.find_by_iso("NL").id
 end
 Spree::Config.set(logo: "bazinga.png")

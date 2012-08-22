@@ -48,10 +48,11 @@ gem 'i18n'
 gem 'spree'
 gem 'spree_auth'
 gem "spree_social" , :git => "git://github.com/spree/spree_social.git"
-gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express", branch: "patch-1"
+gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express"
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
 gem "spree_address_book", :github => "erikkallen/spree_address_book"
-gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing", branch: "patch-1"
+gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing"
+gem 'spree_contact_form', :github => "joshnuss/spree-contact-form"
 #gem "spree_address_book", :path => "vendor/spree_address_book"

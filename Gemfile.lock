@@ -8,8 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/erikkallen/spree_paypal_express.git
-  revision: ff84f0b9281cdb2fe942f5b7c02aa479b96b087d
-  branch: patch-1
+  revision: 8cdf855e85de01697c188fe71f8e2ea236be3a22
   specs:
     spree_paypal_express (1.1.0)
       spree_auth (>= 1.0.0)
@@ -17,11 +16,17 @@ GIT
 
 GIT
   remote: git://github.com/erikkallen/spree_volume_pricing.git
-  revision: a32577218f92022e790844d7f7605a83d97b9d8b
-  branch: patch-1
+  revision: 0b17f94846ddd8bfc31ec2e26db710f44c61b805
   specs:
     spree_volume_pricing (3.2.0)
       spree_core (~> 1.1)
+
+GIT
+  remote: git://github.com/joshnuss/spree-contact-form.git
+  revision: 716d20273245a42dbba7d6373cd00a7090e64e43
+  specs:
+    spree_contact_form (4.0.0)
+      spree_core (>= 1.0.0)
 
 GIT
   remote: git://github.com/spree/spree_social.git
@@ -291,6 +296,7 @@ DEPENDENCIES
   spree
   spree_address_book!
   spree_auth
+  spree_contact_form!
   spree_paypal_express!
   spree_social!
   spree_volume_pricing!
