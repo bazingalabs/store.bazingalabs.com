@@ -54,5 +54,5 @@ gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express"
 #gem 'spree_skrill'
 gem "spree_address_book", :github => "erikkallen/spree_address_book"
 gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing"
-gem 'spree_contact_form', :github => "joshnuss/spree-contact-form"
+gem 'spree_contact_form', :github => "pollingj/spree-contact-form"
 #gem "spree_address_book", :path => "vendor/spree_address_book"

@@ -22,8 +22,8 @@ GIT
       spree_core (~> 1.1)
 
 GIT
-  remote: git://github.com/joshnuss/spree-contact-form.git
-  revision: 716d20273245a42dbba7d6373cd00a7090e64e43
+  remote: git://github.com/pollingj/spree-contact-form.git
+  revision: 76ddbb7fd21b61c5caac95e1e767cb0604c80d18
   specs:
     spree_contact_form (4.0.0)
       spree_core (>= 1.0.0)
