@@ -655,6 +655,9 @@ html, body {
   background-color: #eee;
   -webkit-font-smoothing: always;
 }
+html {
+	overflow: auto;
+}
 body {
 	padding-top: 70px;
 }
