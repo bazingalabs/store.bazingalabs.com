@@ -41,14 +41,6 @@ GIT
       spree_auth (~> 1.1.0)
       spree_core (~> 1.1.0)
 
-GIT
-  remote: git://github.com/yabawock/bootstrap-sass-rails.git
-  revision: 9f911ef7744947579ae5a52370302c371989c2fb
-  specs:
-    bootstrap-sass-rails (2.1.0.0)
-      rails (~> 3.1)
-      sass-rails (~> 3.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -293,7 +285,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass-rails!
   capistrano
   coffee-rails (~> 3.2.1)
   foreman
