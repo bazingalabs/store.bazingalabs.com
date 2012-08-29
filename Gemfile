@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -55,4 +55,5 @@ gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express"
 gem "spree_address_book", :github => "erikkallen/spree_address_book"
 gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing"
 gem 'spree_contact_form', :github => "pollingj/spree-contact-form"
+# gem 'bootstrap-sass-rails', :github => "yabawock/bootstrap-sass-rails"
 #gem "spree_address_book", :path => "vendor/spree_address_book"
