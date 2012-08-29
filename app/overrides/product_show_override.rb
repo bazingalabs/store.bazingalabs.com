@@ -14,7 +14,7 @@ Deface::Override.new(:virtual_path  => "spree/products/show",
                      :name => 'change_product_right',
                      :original => 'cb09475eb14012ed435ee2774c09a52cd7e9a7ba',
                      :set_attributes => "[data-hook='product_right_part']",
-                     :attributes => {:class => 'span5'})
+                     :attributes => {:class => 'span4'})
                     
  Deface::Override.new(:virtual_path  => "spree/products/show",
                      :name => 'change_product_right_wrap',
