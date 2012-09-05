@@ -242,6 +242,44 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
     }
   }
 
+  #link-to-cart {
+        
+     .amount {
+      display:none;
+     }   
+    .amount:hover {
+      position:absolute;
+      border: 1px solid black;
+      top: 70px;
+      display: block;
+      height: 40px;
+      -webkit-background-clip: padding-box;
+-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+background-clip: padding-box;
+background-color: white;
+border-bottom-color: rgba(0, 0, 0, 0.2);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color: rgba(0, 0, 0, 0.2);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgba(0, 0, 0, 0.2);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgba(0, 0, 0, 0.2);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-style: solid;
+border-top-width: 1px;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+padding:5px;
+padding-top: 0px;
+color: #333;
+display: block;
+    }
+  }
   /*--------------------------------------*/
   /* Navigation
   /*--------------------------------------*/
@@ -683,8 +721,9 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
   #billing, #shipping, #shipping_method, 
   #payment, #order_details, #order_summary {
     margin-top: 10px;
-    border: 1px solid lighten($body_text_color, 60);
+    //border: 1px solid lighten($body_text_color, 60);
     padding: 10px;
+    border: none !important;
 
     legend {
       text-transform: uppercase;
@@ -746,7 +785,7 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
         margin: 0;
 
         &:first-child {
-          margin-left: 10px;
+          //margin-left: 10px;
         }
       }
 

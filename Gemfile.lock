@@ -1,10 +1,10 @@
 GIT
-  remote: git://github.com/erikkallen/spree_address_book.git
-  revision: 30304e026be96ffa72ec048c9620af8a44ee8207
+  remote: git://github.com/DynamoMTL/spree_address_book.git
+  revision: 6468225e93836df0fa5a94e9cd3dd8feedf1a7a9
   specs:
-    spree_address_book (1.1.0)
-      spree_auth (~> 1.0)
-      spree_core (~> 1.0)
+    spree_address_book (1.2.0)
+      spree_auth (~> 1.1.x)
+      spree_core (~> 1.1.x)
 
 GIT
   remote: git://github.com/erikkallen/spree_paypal_express.git

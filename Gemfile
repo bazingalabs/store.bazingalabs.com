@@ -52,7 +52,7 @@ gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express"
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
-gem "spree_address_book", :github => "erikkallen/spree_address_book"
+gem "spree_address_book", :github => "DynamoMTL/spree_address_book"
 gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing"
 gem 'spree_contact_form', :github => "pollingj/spree-contact-form"
 # gem 'bootstrap-sass-rails', :github => "yabawock/bootstrap-sass-rails"

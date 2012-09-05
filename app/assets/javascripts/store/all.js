@@ -11,6 +11,8 @@
 // require store/spree_auth
 // require store/spree_promo
 
-//= require_tree .
+// require_tree .
 //= require store/spree_address_book
 // require store/spree_social
+//= require store/bootstrap-tooltip
+//= require store/bootstrap-popover
