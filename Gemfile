@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.11'
+gem 'rails', '~> 3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -45,15 +45,15 @@ gem 'i18n'
 # To use debugger
 # gem 'debugger'
 #gem 'pry'
-gem 'spree'
-gem 'spree_auth'
-gem "spree_social" , :git => "git://github.com/spree/spree_social.git"
-gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express"
+gem 'spree', '~> 1.1.2'
+gem 'spree_auth', '~> 1.1.2'
+gem "spree_social" , :git => "git://github.com/spree/spree_social.git", :branch => "1-1-stable"
+gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express", :branch => "1-1-stable"
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
-gem "spree_address_book", :github => "DynamoMTL/spree_address_book"
-gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing"
+gem "spree_address_book", :github => "DynamoMTL/spree_address_book", :branch => "1-1-stable"
+gem "spree_volume_pricing", :github => "spree/spree_volume_pricing", :branch => "1-1-stable"
 gem 'spree_contact_form', :github => "pollingj/spree-contact-form"
 # gem 'bootstrap-sass-rails', :github => "yabawock/bootstrap-sass-rails"
 #gem "spree_address_book", :path => "vendor/spree_address_book"
