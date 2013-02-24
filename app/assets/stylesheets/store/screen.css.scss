@@ -26,6 +26,21 @@ hr {
 ins {background-color: $link_text_color; color: $layout_background_color; text-decoration: none;}
 mark {background-color: $link_text_color; color: $layout_background_color; font-style: italic; font-weight: bold;}
 
+
+[data-hook="billing_fieldset_wrapper"] {
+	width: 400px;
+	
+	float: left;
+}
+
+[data-hook="shipping_fieldset_wrapper"] {
+	width: 400px;
+	
+	float: right;
+}
+.clear {
+	clear: both;
+}
   /*--------------------------------------*/
   /* Links
   /*--------------------------------------*/

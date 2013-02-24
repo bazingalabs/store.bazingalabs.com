@@ -1,20 +1,18 @@
 GIT
-  remote: git://github.com/DynamoMTL/spree_address_book.git
-  revision: a351e26eed44f815f1255d7949067a4fe47527e3
-  branch: 1-1-stable
+  remote: git://github.com/argerim/select2-rails.git
+  revision: 52d93245ce3e3232a568d405425b71a05ad2ffc2
   specs:
-    spree_address_book (1.2.0)
-      spree_auth (~> 1.1.3)
-      spree_core (~> 1.1.3)
+    select2-rails (3.3.1)
+      sass-rails (>= 3.2)
+      thor (~> 0.14)
 
 GIT
-  remote: git://github.com/erikkallen/spree_paypal_express.git
-  revision: 2c61f1700ef853e3d4f39739793dc3308422e94b
-  branch: 1-1-stable
+  remote: git://github.com/erikkallen/spree_volume_pricing.git
+  revision: c14a41ae625a6987d394fbf75d9400ba8af68b8e
+  branch: patch-1
   specs:
-    spree_paypal_express (1.1.0)
-      spree_auth (>= 1.0.0)
-      spree_core (>= 1.0.0)
+    spree_volume_pricing (3.3.0)
+      spree_core (~> 1.1)
 
 GIT
   remote: git://github.com/pollingj/spree-contact-form.git
@@ -24,27 +22,46 @@ GIT
       spree_core (>= 1.0.0)
 
 GIT
-  remote: git://github.com/spree/spree_social.git
-  revision: 690ccad603cf322ed64af331d351d56fe51185cc
-  branch: 1-1-stable
+  remote: git://github.com/romul/spree_address_book.git
+  revision: 38cb290ca5b110e7e22be756eeac9479dfbab163
+  branch: master
   specs:
-    spree_social (2.1.0)
+    spree_address_book (1.3.0)
+      spree_auth_devise
+      spree_core (~> 1.2)
+
+GIT
+  remote: git://github.com/spree/spree_auth_devise.git
+  revision: ab03a7a22740b52f96bf0311a1e9f18a99ee02f2
+  branch: 1-3-stable
+  specs:
+    spree_auth_devise (1.0.0)
+      cancan (~> 1.6.7)
+      devise (~> 2.2.3)
+      devise-encryptable (= 0.1.1)
+      spree_core
+
+GIT
+  remote: git://github.com/spree/spree_paypal_express.git
+  revision: 8238441ed506c7c9bee0444bc7004b79712ab52d
+  branch: 1-3-stable
+  specs:
+    spree_paypal_express (1.2.0)
+      spree_core (~> 1.3.0)
+
+GIT
+  remote: git://github.com/spree/spree_social.git
+  revision: 2cca34a29d48d9102ea05e20ac8c1957b5a5fa01
+  branch: 1-3-stable
+  specs:
+    spree_social (2.3.0)
       oa-core
       omniauth
       omniauth-facebook
       omniauth-github
       omniauth-google-oauth2
       omniauth-twitter
-      spree_auth (~> 1.1.0)
-      spree_core (~> 1.1.0)
-
-GIT
-  remote: git://github.com/spree/spree_volume_pricing.git
-  revision: 8806fa1b74191dd1eb8348b023a9455b652c6433
-  branch: 1-1-stable
-  specs:
-    spree_volume_pricing (3.3.0)
-      spree_core (~> 1.1)
+      spree_core (~> 1.3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -65,9 +82,9 @@ GEM
     active_utils (1.0.5)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.28.0)
+    activemerchant (1.29.3)
       active_utils (>= 1.0.2)
-      activesupport (>= 2.3.11)
+      activesupport (>= 2.3.14)
       builder (>= 2.0.0)
       i18n
       json (>= 1.5.1)
@@ -89,14 +106,21 @@ GEM
       multi_json (~> 1.0)
     acts_as_list (0.1.4)
     arel (3.0.2)
+    awesome_nested_set (2.1.5)
+      activerecord (>= 3.0.0)
     aws-sdk (1.3.9)
       httparty (~> 0.7)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
+    better_errors (0.7.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.1)
+      debug_inspector (>= 0.0.1)
     builder (3.0.4)
-    cancan (1.6.7)
+    cancan (1.6.8)
     capistrano (2.14.2)
       highline
       net-scp (>= 1.0.0)
@@ -107,6 +131,7 @@ GEM
       activesupport (>= 3.0)
     cocaine (0.5.1)
       climate_control (>= 0.0.3, < 1.0)
+    coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -114,14 +139,17 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    debug_inspector (0.0.2)
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
-    devise (2.0.5)
+    devise (2.2.3)
       bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.0.3)
+      orm_adapter (~> 0.1)
       railties (~> 3.1)
-      warden (~> 1.1.1)
+      warden (~> 1.2.1)
+    devise-encryptable (0.1.1)
+      devise (>= 2.1.0.rc)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -162,9 +190,6 @@ GEM
     multi_xml (0.5.3)
     multipart-post (1.1.5)
     mysql2 (0.3.11)
-    nested_set (1.7.0)
-      activerecord (>= 3.0.0)
-      railties (>= 3.0.0)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.1)
@@ -201,7 +226,7 @@ GEM
     omniauth-twitter (0.0.14)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
-    orm_adapter (0.0.7)
+    orm_adapter (0.4.0)
     paperclip (2.8.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -210,7 +235,7 @@ GEM
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
-    rabl (0.6.5)
+    rabl (0.7.2)
       activesupport (>= 2.3.14)
       multi_json (~> 1.0)
     rack (1.4.5)
@@ -237,7 +262,7 @@ GEM
       thor (>= 0.14.6, < 2.0)
     raindrops (0.10.0)
     rake (10.0.3)
-    ransack (0.6.0)
+    ransack (0.7.2)
       actionpack (~> 3.0)
       activerecord (~> 3.0)
       polyamorous (~> 0.5.0)
@@ -248,49 +273,44 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    spree (1.1.5)
-      spree_api (= 1.1.5)
-      spree_auth (= 1.1.5)
-      spree_cmd (= 1.1.5)
-      spree_core (= 1.1.5)
-      spree_dash (= 1.1.5)
-      spree_promo (= 1.1.5)
-      spree_sample (= 1.1.5)
-    spree_api (1.1.5)
-      rabl (= 0.6.5)
-      spree_auth (= 1.1.5)
-      spree_core (= 1.1.5)
-    spree_auth (1.1.5)
-      cancan (= 1.6.7)
-      devise (~> 2.0.0)
-      spree_core (= 1.1.5)
-    spree_cmd (1.1.5)
+    spree (1.3.2)
+      spree_api (= 1.3.2)
+      spree_cmd (= 1.3.2)
+      spree_core (= 1.3.2)
+      spree_dash (= 1.3.2)
+      spree_promo (= 1.3.2)
+      spree_sample (= 1.3.2)
+    spree_api (1.3.2)
+      spree_core (= 1.3.2)
+      versioncake (= 0.4.0)
+    spree_cmd (1.3.2)
       thor (>= 0.14.6)
-    spree_core (1.1.5)
-      activemerchant (= 1.28.0)
+    spree_core (1.3.2)
+      activemerchant (~> 1.29.3)
       acts_as_list (= 0.1.4)
+      awesome_nested_set (= 2.1.5)
       aws-sdk (~> 1.3.4)
+      cancan (= 1.6.8)
       deface (>= 0.9.0)
       ffaker (~> 1.12.0)
       highline (= 1.6.11)
-      jquery-rails (~> 2.0)
+      jquery-rails (~> 2.2.0)
       kaminari (= 0.13.0)
       money (= 5.0.0)
-      nested_set (= 1.7.0)
       paperclip (~> 2.8)
+      rabl (= 0.7.2)
       rails (~> 3.2.11)
-      ransack (~> 0.6.0)
+      ransack (~> 0.7.2)
+      select2-rails (~> 3.2)
       state_machine (= 1.1.2)
       stringex (~> 1.3.2)
-    spree_dash (1.1.5)
+    spree_dash (1.3.2)
       httparty (~> 0.8.1)
-      spree_auth (= 1.1.5)
-      spree_core (= 1.1.5)
-    spree_promo (1.1.5)
-      spree_auth (= 1.1.5)
-      spree_core (= 1.1.5)
-    spree_sample (1.1.5)
-      spree_core (= 1.1.5)
+      spree_core (= 1.3.2)
+    spree_promo (1.3.2)
+      spree_core (= 1.3.2)
+    spree_sample (1.3.2)
+      spree_core (= 1.3.2)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -313,13 +333,19 @@ GEM
       rack
       raindrops (~> 0.7)
     uuidtools (2.1.3)
-    warden (1.1.1)
+    versioncake (0.4.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+    warden (1.2.1)
       rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   capistrano
   coffee-rails (~> 3.2.1)
   foreman
@@ -328,9 +354,10 @@ DEPENDENCIES
   mysql2
   rails (~> 3.2.12)
   sass-rails (~> 3.2.3)
-  spree (~> 1.1.2)
+  select2-rails!
+  spree (~> 1.3.2)
   spree_address_book!
-  spree_auth (~> 1.1.2)
+  spree_auth_devise!
   spree_contact_form!
   spree_paypal_express!
   spree_social!

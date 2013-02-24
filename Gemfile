@@ -25,6 +25,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
 gem 'jquery-rails'
 
 #gem 'spree_ajax_add_to_cart', :git => 'git://github.com/joneslee85/spree_ajax_add_to_cart.git'
@@ -45,15 +50,17 @@ gem 'i18n'
 # To use debugger
 # gem 'debugger'
 #gem 'pry'
-gem 'spree', '~> 1.1.2'
-gem 'spree_auth', '~> 1.1.2'
-gem "spree_social" , :git => "git://github.com/spree/spree_social.git", :branch => "1-1-stable"
-gem "spree_paypal_express", :github => "erikkallen/spree_paypal_express", :branch => "1-1-stable"
+gem 'spree', '~> 1.3.2'
+gem 'select2-rails', :github => 'argerim/select2-rails'
+#gem 'spree_auth', '~> 1.3.2'
+gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
+gem "spree_social" , :git => "git://github.com/spree/spree_social.git", :branch => "1-3-stable"
+gem "spree_paypal_express", :github => "spree/spree_paypal_express", :branch => "1-3-stable"
 #gem 'spree_auth_devise', :git => "git://github.com/spree/spree_auth_devise"
 #gem 'spree_usa_epay'
 #gem 'spree_skrill'
-gem "spree_address_book", :github => "DynamoMTL/spree_address_book", :branch => "1-1-stable"
-gem "spree_volume_pricing", :github => "spree/spree_volume_pricing", :branch => "1-1-stable"
+gem "spree_address_book", :github => 'romul/spree_address_book', :branch => "master"
+gem "spree_volume_pricing", :github => "erikkallen/spree_volume_pricing", :branch => "patch-1"
 gem 'spree_contact_form', :github => "pollingj/spree-contact-form"
 # gem 'bootstrap-sass-rails', :github => "yabawock/bootstrap-sass-rails"
 #gem "spree_address_book", :path => "vendor/spree_address_book"
